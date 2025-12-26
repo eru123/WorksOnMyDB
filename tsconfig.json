@@ -1,0 +1,10 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./packages/core" },
+    { "path": "./packages/runtime" },
+    { "path": "./packages/adapter-mysql" },
+    { "path": "./packages/cli" },
+    { "path": "./packages/models" }
+  ]
+}

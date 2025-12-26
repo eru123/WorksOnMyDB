@@ -1,0 +1,25 @@
+{
+  "name": "@worksonmydb/cli",
+  "version": "0.1.0",
+  "license": "SEE LICENSE IN LICENSE",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "worksonmydb": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -b .",
+    "start": "pnpm run build && node dist/cli.js"
+  },
+  "dependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@worksonmydb/adapter-mysql": "workspace:*",
+    "@worksonmydb/core": "workspace:*",
+    "@worksonmydb/runtime": "workspace:*",
+    "commander": "^11.1.0",
+    "fs-extra": "^11.2.0",
+    "glob": "^10.3.10",
+    "ts-node": "^10.9.2"
+  },
+  "devDependencies": {}
+}

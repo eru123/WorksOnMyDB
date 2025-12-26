@@ -1,0 +1,15 @@
+{
+  "name": "@worksonmydb/adapter-mysql",
+  "version": "0.1.0",
+  "license": "SEE LICENSE IN LICENSE",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -b ."
+  },
+  "dependencies": {
+    "@worksonmydb/core": "workspace:*",
+    "mysql2": "^3.6.2"
+  },
+  "devDependencies": {}
+}

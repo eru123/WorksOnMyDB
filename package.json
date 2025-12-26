@@ -1,0 +1,25 @@
+{
+  "name": "worksonmydb",
+  "version": "0.1.0",
+  "private": true,
+  "license": "SEE LICENSE IN LICENSE",
+  "packageManager": "pnpm@8.15.8",
+  "scripts": {
+    "build": "pnpm -r build",
+    "start": "pnpm --filter @worksonmydb/cli start",
+    "clean": "rimraf **/dist"
+  },
+  "dependencies": {
+    "@worksonmydb/adapter-mysql": "workspace:*",
+    "@worksonmydb/cli": "workspace:*",
+    "@worksonmydb/core": "workspace:*",
+    "@worksonmydb/models": "workspace:*",
+    "@worksonmydb/runtime": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.6",
+    "rimraf": "^5.0.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
